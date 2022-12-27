@@ -3,6 +3,17 @@
     box-sizing: border-box;
 }
 
+#fixed{
+    position: fixed;
+    top : 50px;
+    left : 50px;
+    display: inline-block;
+    width:  100px;
+    height: 100px;
+    border: 1px solid black; 
+    border-radius: 50px;
+
+}
 
 div#header-center,div#zerocho /*div는 생략 가능 */
 {
