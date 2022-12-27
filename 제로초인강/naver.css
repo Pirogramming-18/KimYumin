@@ -1,0 +1,7 @@
+/* 선택자(selector) */
+div#header-center,div#zerocho /*div는 생략 가능 */
+{
+    margin : 0 auto;
+    width : 1080px;
+}
+/*header는 생략 못함 */
