@@ -7,10 +7,23 @@ div#header-center,div#zerocho /*div는 생략 가능 */
 }
 /*header는 생략 못함 */
 
-#header-search > h1{ /* 자식태그 - 기존의 아이디에서 h1 찾기 */
-    width : 280px;
+#header-search  h1{ /* 자식태그 > - 기존의 아이디에서 h1 찾기 */
+    width : 440px;
+    height: 103px;
+    margin-top: 0px;
     display: inline-block;
+    background-image: url(./naver_logo.png);
+    background-position: 0 -320px;
+    text-indent: 100%;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    /*빈 공간 채우기 위해 반복됨 */
+    /* background : url() -4px -10px no-repeat*/
+    overflow: hidden;
+}
 
+#header-search a {
+    text-decoration: none;
 }
 
 /* 
@@ -21,8 +34,15 @@ div#header-center,div#zerocho /*div는 생략 가능 */
 }
 
 #header-search fieldset{
-    width: 500px;
+    height: 49px;
+    width: 521px;
+    padding: 12px 0 12px 10px;
     display: inline-block; /*display block을 컨텐츠만 한정 짓는 inline block으로 */
+    border : 2px solid #03cf5d;
+}
+
+#header-search h1 span {
+    display: none;
 }
      
 .blind {
