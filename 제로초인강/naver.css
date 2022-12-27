@@ -54,6 +54,18 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     outline: none;
     vertical-align: middle;
 }
+#header-search fieldset button{
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+
+    
+    background: #03cf5d;
+    
+
+}
+#header-search fieldset 
 
 #header-search h1 span {
     display: none;
@@ -66,4 +78,14 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     height: 1px;
     margin: -1px;
     overflow: hidden;
+}
+
+#search-image{
+    width : 44px;
+    height: 44px;
+    background-image: url(./naver_logo.png);
+    background-position: -308px -772px;
+    background-repeat: no-repeat;
+    display: inline-block;
+
 }
