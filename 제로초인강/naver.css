@@ -2,6 +2,26 @@
 div#header-center,div#zerocho /*div는 생략 가능 */
 {
     margin : 0 auto;
-    width : 1080px;
+    width : 1080px; 
+    /* 픽셀은 상대적 개념 */
 }
 /*header는 생략 못함 */
+
+#header-search > h1{ /* 자식태그 - 기존의 아이디에서 h1 찾기 */
+    width : 280px;
+    display: inline-block;
+
+}
+
+/* 
+#header-center h1{ } /자손 태그 */
+
+#header-search h2{
+    display: none;
+}
+
+#header-search fieldset{
+    width: 500px;
+    display: inline-block; /*display block을 컨텐츠만 한정 짓는 inline block으로 */
+}
+     
