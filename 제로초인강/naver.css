@@ -46,25 +46,30 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     padding: 12px 0 12px 10px;
     display: inline-block; /*display block을 컨텐츠만 한정 짓는 inline block으로 */
     border : 2px solid #03cf5d; /*hex */
-    
+    position: relative;
 }
 #header-search fieldset input{
+    width: 405px;
+    height: 23px;
     border: none;
     padding : 0;
     outline: none;
-    vertical-align: middle;
+    vertical-align: top;
 }
 #header-search fieldset button{
     width: 49px;
     height: 49px;
     border: none;
     padding: 0;
+    position: absolute;
+    right : 0;
+    top : 0;
 
-    
     background: #03cf5d;
     
 
 }
+ /*볼륨 서식 컨텍스트 */
 #header-search fieldset 
 
 #header-search h1 span {
