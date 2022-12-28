@@ -179,6 +179,7 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     padding: 16px 0 0 4;
     list-style: none;
     display: inline-block;
+    border: #888;
     
 }
 nav li{
@@ -237,52 +238,72 @@ main{
 
 #main-centered{
     padding: 8px 10px 0;
+    background: #555;
 }
 
 #main-ad{
-    display:  inline-block;
+    float: left;
     width : 740px;
     height : 120px;
+    background: #555;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 #main-login{
     display: inline-block;
-    width: 332px;
+    width: 260px;
     height: 120px;
     vertical-align: top;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background: white;
 }
 #main-ytn{
     display: inline-block;
     width: 740px;
     height: 46px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background: white;
 }
 #main-newsstand{
     display: inline-block;
-    width: 740px;
+    width: 690px;
     height: 246px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background: white;
 }
 #main-weather{
     display: inline-block;
     width : 332px;
     height: 142px;
+    margin-bottom: 8px;
+    margin-right: 8px;
     background-color: white;
 }
 #main-second-ad{
     display: inline-block;
     width: 332px;
     height: 150px;
-    background: #555;
+    background: black;
 
 }
 #main-category{
     display: inline-block;
     width: 740px;
     height: 837px;
+    background: white;
+    margin-bottom: 8px;
+    margin-right: 8px ;
 
 }
 #main-shopping{
     display: inline-block;
     width: 740px;
     height: 130px;
+    margin-bottom: 8px;
+    margin-right: 8px;
     background: white;
 
 }
@@ -293,4 +314,3 @@ main{
     background: white;
     vertical-align: top;
 }
-#main-
