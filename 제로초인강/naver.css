@@ -164,6 +164,22 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     height : 20px;
     
 }
+#search-ranking ul {
+    display: none;
+    list-style: none;
+    padding: 17px;
+    margin : 0;
+    width : 332px;
+    height: 334;
+    border: 1px solid #aaa;
+    background: white;
+    position: absolute;
+    top: -15px;
+    right: 0;
+}
+#search-ranking:hover ul{
+    display: inline-block;
+}
 #rank-number{
     margin-top: -9px;
     color : #00ab33;
@@ -181,7 +197,7 @@ div#header-center,div#zerocho /*div는 생략 가능 */
  
 }
 
-#nav ul{
+#nav-menu ul{
     margin : 0;
     padding: 16px 0 0 4;
     list-style: none;
@@ -192,12 +208,12 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     
     
 }
-nav li{
+#nav-menu li{
     display: inline-block;
     
 }
 
-nav li span:first-child{
+#nav-menu li span:first-child{
     width : 25px;
     height : 16px;
    
@@ -208,34 +224,34 @@ nav li span:first-child{
     margin-left:  14px;
 
 }
-nav li:first-child span:first-child{
+#nav-menu li:first-child span:first-child{
     width : 25px;
     background-position: 0 -285px;
     margin-left : 0px !important;
    
 }
-nav li:nth-child(2) span:first-child{
+#nav-menu li:nth-child(2) span:first-child{
     width : 25px;
     background-position: -279px -52px;
 
 
 }
-nav li:nth-child(3) span:first-child{
+#nav-menu li:nth-child(3) span:first-child{
     width : 40px;
     background-position: -100px -182px;
     
 }
-nav li:nth-child(4) span:first-child{
+#nav-menu li:nth-child(4) span:first-child{
     width : 40px;
     background-position: -101px -156px;
   
 }
-nav li:nth-child(5) span:first-child{
+#nav-menu li:nth-child(5) span:first-child{
     width : 26px;
     background-position: -279px -156px;
 
 }
-nav li:nth-child(6) span:first-child{
+#nav-menu li:nth-child(6) span:first-child{
     width : 25px;
     background-position: -70px -285px;
     
