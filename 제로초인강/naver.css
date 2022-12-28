@@ -88,7 +88,7 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     position: relative;
 }
 #header-search fieldset input{
-    width: 405px;
+    width: 360px;
     height: 23px;
     border: none;
     padding : 0;
@@ -123,7 +123,26 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     margin: -1px;
     overflow: hidden;
 }
+#search-keyboard{
+    background-image: url(./naver_logo.png);
+    background-repeat: no-repeat;
+    background-position: -840px -496px;
+    width: 39px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0 6px;
+}
+#search-history{
+    background-image: url(./naver_logo.png);
+    background-repeat: no-repeat;
+    background-position: -808px -516px;
+    width: 20px;
+    height: 10px;
+    vertical-align: middle;
+    display: inline-block;
 
+}
 #search-image{
     width : 44px;
     height: 44px;
