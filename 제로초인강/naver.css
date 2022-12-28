@@ -59,7 +59,7 @@ div#header-center,div#zerocho /*div는 생략 가능 */
 #header-search fieldset{
     margin-left: 20px;
     height: 49px;
-    width: 521px;
+    width: 501px;
     padding: 12px 0 12px 10px;
     display: inline-block; /*display block을 컨텐츠만 한정 짓는 inline block으로 */
     border : 2px solid #03cf5d; /*hex */
