@@ -289,6 +289,9 @@ main{
     margin-bottom: 8px;
     background: white;
 }
+#main-login{
+    text-decoration: underline;
+}
 #main-second-block .inline-block:first-child{
     
     width: 720px;
