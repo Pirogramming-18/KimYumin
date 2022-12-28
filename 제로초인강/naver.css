@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+html, body{
+    margin : 0;
+    padding : 0;
+    font-family: DOtum,'돋움',Helvetica, "Apple SD Gothic Neo",sans-serif;
+}
+
 #fixed{
     position: fixed;
     top : 50px;
@@ -14,6 +20,13 @@
     border-radius: 50px;
 
 }
+header{
+    height: 170px;
+}
+#header-top{
+    float : right;
+    margin-top : 8px;
+}
 
 #header-top span{
     color : #888;
@@ -23,11 +36,6 @@
 
 }
 
-#header-top{
-    
-   
-    float : right;
-}
 
 div#header-center,div#zerocho /*div는 생략 가능 */
 {
@@ -125,11 +133,34 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     display: inline-block;
 
 }
+#search-ranking{
+    position: absolute;
+    top : 16px;
+    right : 10px;
+    
+}
+#rank-number{
+    margin-top: -9px;
+    color : #00ab33;
+    font-size: 16px;
+    display: inline-block;
+
+}
+
+#nav-divider{
+    float : left;
+    margin: 18px 16px 0;
+    width : 1px;
+    height: 14px;
+    background: #ebeef3;
+}
 
 #nav ul{
     margin : 0;
-    padding: 0;
+    padding: 16px 0 0 4;
     list-style: none;
+    display: inline-block;
+    
 }
 nav li{
     display: inline-block;
