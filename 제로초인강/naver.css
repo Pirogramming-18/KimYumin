@@ -160,6 +160,8 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     position: absolute;
     top : 16px;
     right : 10px;
+    width : 198px;
+    height : 20px;
     
 }
 #rank-number{
