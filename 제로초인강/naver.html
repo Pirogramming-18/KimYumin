@@ -113,13 +113,23 @@
         <main>
             <div id="main-centered" class="center-align">
                 <div id="main-first-block">
-                    <div class="inline-block">
-                    
-                <div id="main-first-ad"></div>
-            <div id="main-login">
-            <h3>로그인</h3>
-        </div>  
-        </div>
+                    <section id="main-ad">
+                        <h3 class="blind">광고</h3>
+                      </section>
+                      <section id="main-login">
+                        <h3 class="blind">로그인</h3>
+                        <div class="login-wrapper">
+                          <span class="login-text">네이버를 더 안전하고 편리하게 이용하세요.</span>
+                          <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">
+                            <span class="blind">NAVER 로그인</span>
+                            <span class="login-image"></span>
+                          </a>
+                          <a
+                            class="login-signup"
+                            href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
+                          >회원가입</a>
+                        </div>
+                      </section>
     </div>
 
         <div id="main-second-block">
@@ -146,10 +156,43 @@
     </div>
     </div>
     <div id="main-third-block">
-    <div id="inline-block">
-    <div id="main-category">
-        <h3>주제별 보기</h3>
-    </div>
+        <section id="main-category">
+            <h3 class="blind">주제별 보기</h3>
+            <div id="main-category-top">
+              <button id="subject-all">
+                <span class="blind">전체 주제 열기</span>
+                <span></span>
+              </button>
+              <div id="subject-list">
+                <div class="opacity left"></div>
+                <ul>
+                  <li>리빙</li>
+                  <li>푸드</li>
+                  <li>스포츠</li>
+                  <li>자동차</li>
+                  <li>패션뷰티</li>
+                  <li>부모i</li>
+                  <li class="highlight">건강</li>
+                  <li>웹툰</li>
+                  <li>게임</li>
+                  <li>티비</li>
+                  <li>TV연예</li>
+                  <li>뮤직</li>
+                  <li>영화</li>
+                  <li>책문화</li>
+                </ul>
+                <div class="opacity right"></div>
+              </div>
+              <button id="subject-prev">
+                <span class="blind">이전 주제</span>
+                <span></span>
+              </button>
+              <button id="subject-next">
+                <span class="blind">다음 주제</span>
+                <span></span>
+              </button>
+            </div>
+          </section>
 </div>
       <div id="inline-block">
     <div id="main-shopping">
