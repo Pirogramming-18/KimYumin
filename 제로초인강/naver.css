@@ -228,3 +228,8 @@ nav li:nth-child(6) span:first-child{
     background-position: -70px -285px;
     
 }
+
+main{
+    display: inline-block;
+    width: 100%;
+}
