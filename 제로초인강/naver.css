@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+
+.inline-block{
+    display: inline-block;
+}
 html, body{
     margin : 0;
     padding : 0;
@@ -172,6 +176,7 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     width : 1px;
     height: 14px;
     background: #ebeef3;
+ 
 }
 
 #nav ul{
@@ -179,11 +184,15 @@ div#header-center,div#zerocho /*div는 생략 가능 */
     padding: 16px 0 0 4;
     list-style: none;
     display: inline-block;
-    border: #888;
+    border: 5px solid #888;
+   
+
+    
     
 }
 nav li{
     display: inline-block;
+    
 }
 
 nav li span:first-child{
@@ -240,35 +249,49 @@ main{
     padding: 8px 10px 0;
     background: #555;
 }
+#main-first-block{
+    display: inline-block;
+    width: 100%;
+}
 
-#main-ad{
+#main-first-ad{
     float: left;
-    width : 740px;
+    width : 720px;
     height : 120px;
-    background: #555;
     margin-right: 8px;
     margin-bottom: 8px;
+    background:rgb(255, 255, 255);
 }
 #main-login{
-    display: inline-block;
-    width: 260px;
+    float: left;
+    width: 200px;
     height: 120px;
     vertical-align: top;
     margin-right: 8px;
     margin-bottom: 8px;
     background: white;
 }
+#main-second-block .inline-block:first-child{
+    width: 500px
+}
+#main-second-block .inline-block:last-child{
+    width: 400px;
+    vertical-align: top;
+}
 #main-ytn{
     display: inline-block;
-    width: 740px;
+    width: 720px;
     height: 46px;
     margin-right: 8px;
     margin-bottom: 8px;
     background: white;
 }
+#main-ytn h3,#main-ytn ol{
+    display: inline-block;
+}
 #main-newsstand{
     display: inline-block;
-    width: 690px;
+    width: 720px;
     height: 246px;
     margin-right: 8px;
     margin-bottom: 8px;
@@ -276,7 +299,7 @@ main{
 }
 #main-weather{
     display: inline-block;
-    width : 332px;
+    width : 200px;
     height: 142px;
     margin-bottom: 8px;
     margin-right: 8px;
@@ -284,8 +307,10 @@ main{
 }
 #main-second-ad{
     display: inline-block;
-    width: 332px;
-    height: 150px;
+    width: 200px;
+    height: 142px;
+    margin-bottom: 8px;
+    margin-right: 8px;
     background: black;
 
 }
