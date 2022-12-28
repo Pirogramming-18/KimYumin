@@ -11,6 +11,7 @@ header{
 #head-logo span{
     width : 80px;
     height : 66px;
+    margin-top: 30px;
     text-indent: 100%;
     background-image: url('./github_logo.JPG');
     background-position: 0 -50px;
@@ -57,7 +58,7 @@ footer{
     margin-bottom: 0px;
     width : 100%;
     height : 131px;
-    background-color: white;
+    
     background-image: url("./footer_img.JPG");
-    background-repeat: no-repeat;
+   
 }
