@@ -2,11 +2,18 @@ header{
     color : white
 }
 
+input:focus{
+    background-color: rgb(124, 108, 202);
+}
+
 #head-left span{
     display: inline-block;
     margin-left: 4px;
     letter-spacing: 1px;
     font-size: 20px;
+}
+#head-right{
+    display: inline-block;
 }
 #head-logo span{
     width : 80px;
@@ -34,10 +41,18 @@ main{
     display: inline-block;
     width: 100%;
 }
+#main-left{
+    float: left;
+    width: 720px;
+    height: 720px;
+    padding: 100px;
+}
 
 #login{
-    width: 720px;
+    float: left;
+    width: 600px;
     height: 100%;
+    padding: 30px;
     border-radius: 8px;
     background-color: white;
 }
