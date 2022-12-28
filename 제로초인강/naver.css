@@ -15,6 +15,20 @@
 
 }
 
+#header-top span{
+    color : #888;
+    letter-spacing: -1px;
+    font-size: 11px;
+    line-height: 22px;
+
+}
+
+#header-top{
+    
+   
+    float : right;
+}
+
 div#header-center,div#zerocho /*div는 생략 가능 */
 {
     margin : 0 auto;
