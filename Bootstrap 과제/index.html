@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link  rel="stylesheet" href="./index.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" >
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row justify-content-start">
+                <div class="col-8 bg-dark text-white">
+                    <div class="row">
+                    <div class="col">Pirogramming</div>
+                    <div class="col text-primary">Son-Byeong-woo</div>
+                    <div class="col">Intro</div>
+                    <div class="col text-secondary">Highlights</div>
+                    <div class="col text-secondary">Gallary</div>
+                    <div class="col text-secondary">Contact</div>
+                    
+                </div>
+                </div>
+                <div class="col-2 bg-dark" ></div>
+                <div class="col-2 bg-dark text-white">
+                    <button type="button" class="btn btn-outline-success float-right"  data-bs-toggle="modal" data-bs-target="#aboutModal">About</button>
+                    
+                </div>
+                
+            </div>
+            <div class="modal fade" id="aboutModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">모달 타이틀</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                내용을 여기에 적어주세요
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <main>
+                
+                <div style="margin-top : 20%;">
+                 <h1 class="text-center" >Pirogramming18</h1>
+                 <h2 class="text-center">cheer up</h2>
+                 <hr style="border : solid 0.5px gray">
+                 <div class= "d-flex justify-content-center">
+                 <button type="button" class="btn btn-primary ">Get Started</button>
+                </div>
+                </div>    
+            </main>
+            <section style="padding : 30rem 0;background :rgba(108 116 123); margin-top:20rem;" >
+                <div>
+                    <h1 class=" text-danger text-center">Build On the Bootstrap Grid</h1>
+                    <p class="text-center">Bootstrap's responsive grid comes in 4sizes or 'breakpoints': tiny(xs).</p>
+                    <p class="text-center">small(sm), medium(md) and large(lg). These 4 grid cites enables you</p>
+                    <p class="text-center">create responsive layouts that behave accordingly on different sizes</p>
+                    <div class= "d-flex justify-content-center">
+                    <button type="button" class="btn btn-light text-dark">Learn more</button>
+                        </div>
+                </div>
+
+            
+                <div class="d-flex flex-row justify-content-center">
+               
+                <hr style="border : solid 1px gray">
+                    <div class="row " style="margin-top: 30rem;">
+                        <h1 style="margin-bottom : 10rem"class="text-primary text-center" >Flexbile Layouts</h1>
+                        <div class="col">
+                           
+                            <img src="./monitor.JPG">
+                        </div>
+                        <div class="col">
+                           <img src="./customizable.JPG">
+
+                        </div>
+                        <div class="col">
+                           <img src="./consistent.JPG">
+
+                        </div>
+                    <div class="row " style="margin-top: 30px;">
+                        <div class="col">
+                            <img src="./사진1.jfif"/>
+                        </div>
+                        <div class="col">
+                            <img src="./사진2.jfif">
+
+                        </div>
+                        <div class="col">
+                            <img src="./사진3.jfif">
+
+                        </div>
+                    <div class="row " style="margin-top: 300px;">
+                        <div class="col" style="top-margin : 30px;">
+                            <img src="./사진1.jfif"/>
+                        </div>
+                        <div class="col">
+                            <img src="./사진2.jfif">
+
+                        </div>
+                        <div class="col">
+                            <img src="./사진3.jfif">
+
+                        </div>
+                  
+
+                </div>
+                </div>
+            </section>
+            <section style="padding : 30rem 0" >
+                <h1 class="text-primary text-center">Get in Touch</h1>
+                <hr style="border : solid 0.5px gray">
+                <div class="row justify-content-start">
+                   
+                        <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="name" aria-label="Username">
+                        </div>
+                        <div class=col>
+                            <input type="text" class="form-control" placeholder="email" aria-label="Username">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="phone" aria-label="Username">
+                        </div>
+                   
+
+                    </div>
+                    <div class="row">
+                        <div class="input-group input-group-lg">
+
+                        </div>
+                        <input type="text" style="height : 300px;"class="form-control" aria-label="Sizing example input"placeholder="Your messages here" aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div style="margin-top : 30px" class= "d-flex justify-content-center">
+                        <button type="button" style="width : 50%;"class="btn-primary btn-center">Send</button>
+                        
+                      </div>
+                    
+                   
+                </div>
+            </section>
+            <footer style="margin-top: 4rem;"container-fluid bg-dark">
+                <div style="background-color: black;">
+                    <div class="row">
+                   <div class="col-4">
+                    <h3 style="color: rgb(15, 235, 238);">Information</h3>
+                    <p class="text-white">product</p>
+                    <p class="text-white">Services</p>
+                    <p class="text-white">Benefits</p>
+                    <p class="text-white">Benefits</p>
+                    <p class="text-white">Developer</p>
+                </div>
+           
+                   <div class="col-4">
+                    <h3 style="color: rgb(15, 235, 238);">About</h3>
+                    <p class="text-white"> Contact us</p>
+                    <p class="text-white">Delivery Information</p>
+                    <p class="text-white">Privacy policy</p>
+                </div>
+                   <div class="col-4">
+                    <h3 style="color: rgb(15, 235, 238);">Stay Posted</h3>
+                    <input type="text" class="form-control" placeholder="Tell me your email" aria-label="Username">
+                    <button type="button" style="width:40%;margin-top:20px"class="btn-primary">Subscribe for updates</button>
+                </div>
+            </div>
+            </footer>
+        
+
+    
+</body>
+</html>
