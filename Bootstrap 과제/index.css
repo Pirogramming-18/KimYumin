@@ -6,3 +6,9 @@ header{
 header .row{
     cursor: pointer;
 }
+
+@media(max-widht: 1020px){
+    header {
+        display: none;
+    }
+}
