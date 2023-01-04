@@ -2,8 +2,18 @@ let timerld;
 let time = 0;
 let hour, min, sec, msec;
 
-const recordItem = document.querySelector('.list-items')
-const check = document.createElement("div");
+const recordItem = document.querySelector('.list-items');
+const allcheck = document.getElementById('allcheck');
+
+
+function allCheck(allcheck){
+    const checks = document.querySelectorAll('input[type="checkbox"]');
+
+    checks.forEach((check) => {
+        check.checked = allcheck.checked;
+    })
+}
+
 
 
 
@@ -44,12 +54,14 @@ function recordClock(){
 }
 
 function deleteRecord(){
-    const check = document.querySelector(".check")
-    for(let i = 0; i < check.length; i++){
-        if(check[i].checked ){
-            check[i].remove();
+    const checks = document.querySelectorAll('input[type="checkbox"]');
+    checks.forEach((check) => {
+        if(check.checked){
+            check.parentElement.remove();
+            check.remove();
+            
         }
-    }
+    })
    
 }
     

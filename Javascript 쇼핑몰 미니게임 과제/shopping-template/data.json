@@ -5,41 +5,42 @@
         "gender" : "female",
         "size" : "large",
         "color" : "blue",
-        "image" : "../img/pink_t.png"},
-   {
-        "type" : "tshirt",
-        "gender" : "female",
-        "size" : "large",
-        "color" : "pink",
-        "image" : "../img/"
+        "image" : "./img/pink_t.png"
     },
    {
         "type" : "tshirt",
         "gender" : "female",
         "size" : "large",
         "color" : "pink",
-        "image" : "../img/pink_t.png"
+        "image" : "./img/blue_t.png"
+    },
+   {
+        "type" : "skirt",
+        "gender" : "female",
+        "size" : "large",
+        "color" : "pink",
+        "image" : "./img/pink_s.png"
     },
  {
-        "type" : "tshirt",
+        "type" : "pants",
         "gender" : "female",
         "size" : "large",
         "color" : "pink",
-        "image" : "../img/pink_t.png"
+        "image" : "./img/pink_t.png"
     },
     {
         "type" : "tshirt",
         "gender" : "female",
         "size" : "large",
         "color" : "pink",
-        "image" : "../img/pink_t.png"
+        "image" : "./img/pink_t.png"
     },
     {
         "type" : "tshirt",
         "gender" : "female",
         "size" : "large",
         "color" : "pink",
-        "image" : "../img/pink_t.png"
+        "image" : "./img/pink_t.png"
     }
     ]
 }

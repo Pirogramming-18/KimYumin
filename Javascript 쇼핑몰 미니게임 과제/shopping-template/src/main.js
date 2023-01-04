@@ -1,7 +1,7 @@
 
 //fetch the items from the JSON file
 function loadItems(){
-    return fetch('data/data.json')
+    return fetch('./data.json')
     .then(response => response.json())
     .then(json => json.items);
 }
@@ -16,7 +16,7 @@ function createHTMLString(item){
     <img src="${item.image}" alt="${item.type}" class="item__thumbnail"/>
     <span class="item__description">${item.gender}, ${item.size}</span>
   </li>
-    `
+    `;
 }
 
 function onButtonClick(event, items){
@@ -27,8 +27,8 @@ function onButtonClick(event, items){
     if(key == null || value == null){
         return;
     }
-    displayItems(items.filter(item => item[key] === value));
-
+    const filtered = items.filter(item => item[key] == value);
+    displayItems(filtered);
 }
 
 function setEventListeners(items){
