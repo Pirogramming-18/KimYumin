@@ -79,8 +79,9 @@ function getTimeFormatString(){
     hour = parseInt(String(time / (60*60)));
     min = parseInt(String((time - (hour * 60 * 60 ))/ 60));
     sec = time % 60;
+    msec = time % 100; 
    
     
-    return String(min).padStart(2,'0') + ":" + String(sec).padStart(2, '0');
+    return String(min).padStart(2,'0') + ":" + String(msec).padStart(2, '0');
 }
 
