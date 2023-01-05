@@ -31,7 +31,7 @@ function printTime(){
 
 function startClock(){
     printTime();
-    stopClock();
+    // stopClock();
     timerld = setTimeout(startClock, 1000);
 }
 
