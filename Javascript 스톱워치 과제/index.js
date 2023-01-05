@@ -54,7 +54,7 @@ function recordClock(){
 }
 
 function deleteRecord(){
-    const checks = document.querySelectorAll('input[type="checkbox"]');
+    const checks = document.querySelectorAll('.check');
     checks.forEach((check) => {
         if(check.checked){
             check.parentElement.remove();
