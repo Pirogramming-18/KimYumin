@@ -32,7 +32,7 @@ function printTime(){
 function startClock(){
     printTime();
     // stopClock();
-    timerld = setTimeout(startClock, 1000);
+    timerld = setTimeout(startClock, 10);
 }
 
 function stopClock(){
