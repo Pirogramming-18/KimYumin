@@ -2,7 +2,7 @@
 <hr>
 {% for review in reviews %}
     <p><a href="/review/{{review.pk}}"> 영화 제목 : {{review.title}}</a></a></p>
-    <p>개봉년도 : </p>
+    <p>개봉년도 : {{review.date}}</p>
     <p>장르 : {{review.genre}}</p>
     <p> 별점 : {{review.rate}}</p>
 {% endfor %}

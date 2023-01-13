@@ -1,6 +1,8 @@
 <h1>{{review.title}}</h1>
 <small>감독 : {{review.director}}</small>
 <br>
+<small>개봉연도 : {{review.date}}</small>
+<br>
 <small>주연 : {{review.actor}}</small>
 <br>
 <small>장르 : {{review.genre}}</small>
@@ -15,9 +17,5 @@
     {% csrf_token %}
     <input type="submit" value="삭제하기"/>
 </form>
-<form action="{{review.id}}/update" method="post">
-    {% csrf_token %}
-   
-    <input type="submit" value="수정하기"/>
-</form> 
+
 <a href="{{review.id}}/update">수정</a>

@@ -15,6 +15,7 @@ def review_create(request,*args,**kwargs):
         Review.objects.create(
             title=request.POST['title'],
             genre=request.POST['genre'],
+            date = request.POST['date'],
             director=request.POST['director'],
             actor = request.POST['actor'],
             rate = request.POST['rate'],
@@ -32,13 +33,14 @@ def review_update(request,pk,*args,**kwargs):
             review.director = request.POST['director']
             review.actor = request.POST['actor']
             review.rate = request.POST['rate']
+            review.date = request.POST['date']
             review.genre = request.POST['genre']
             review.runningtime = request.POST['runningtime']
             review.content = request.POST['content']
             review.save()
-            return render(request, "review_details.html",{"review" : review})
+            # return render(request, "review_details.html",{"review" : review})
         
-            # return redirect(f"review/{review.id}")
+            return redirect(f"/review/{review.id}")
         return render(request, "review_update.html", {"review" : review})
     
 def review_delete(request,pk,*args,**kwargs):

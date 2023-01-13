@@ -2,18 +2,28 @@
 
 <form action="/review/{{review.id}}/update" method="post">
     {% csrf_token %}
+    <h3>영화 제목</h3>
     <input name="title" placeholder="영화 제목" value="{{review.title}}"/>
     <br/>
+    <h3>감독</h3>
     <input name="director" placeholder="감독" value="{{review.director}}"/>
     <br/>
+    <h3>개봉연도</h3>
+    <input name="date" placeholder="개봉연도" value="{{review.date}}"/>
+    <br/>
+    <h3>주연</h3>
     <input name="actor" placeholder="주연" value="{{review.actor}}"/>
     <br/>
+    <h3>장르</h3>
     <input name="genre" placeholder="장르" value="{{review.genre}}"/>
     <br/>
+    <h3>별점</h3>
     <input name="rate" placeholder="별점" value="{{review.rate}}"/>
     <br/>
+    <h3>러닝타임</h3>
     <input name="runningtime" placeholder="러닝타임" value="{{review.runningtime}}"/>
     <br/>
+    <h3>리뷰 내용</h3>
     <input name="content" placeholder="리뷰 내용" value="{{review.content}}"/>
 <div>
     <input type="submit" value="저장하기"/>
