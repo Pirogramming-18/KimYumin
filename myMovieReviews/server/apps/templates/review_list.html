@@ -1,0 +1,10 @@
+<h1>나만의 영화리뷰 사이트</h1>
+<hr>
+{% for review in reviews %}
+    <p><a href="/review/{{review.pk}}"> 영화 제목 : {{review.title}}</a></a></p>
+    <p>개봉년도 : </p>
+    <p>장르 : {{review.genre}}</p>
+    <p> 별점 : {{review.rate}}</p>
+{% endfor %}
+
+<a href="review/create">리뷰 작성하기</a>
