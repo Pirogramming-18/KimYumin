@@ -1,0 +1,20 @@
+<form action="idea/idea_create" method="post">
+{% csrf_token %}
+<small>아이디어명</small>
+<input name="name"/>
+<br>
+<small>Image</small>
+<input type="image"/>
+<br/>
+<small>아이디어 설명</small>
+<textarea name="description"></textarea>
+<br/>
+<small>아이디어 관심도</small>
+<input name="interest"/>
+<br/>
+<small>예상 개발툴</small>
+<input name="tool"/>
+<div>
+    <input type="submit" value="SUBMIT"/>
+</div>
+</form>
