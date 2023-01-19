@@ -6,9 +6,9 @@ from django.http.request import HttpRequest
 
 def idea_list(request:HttpRequest):
     ideas = Idea.objects.all()
-    search_mode = request.GET['search_,mode']
-    if search_mode:
-        ideas = ideas.filter().order_by
+    # search_mode = request.GET['search_,mode']
+    # if search_mode:
+    #     ideas = ideas.filter().order_by
     return render(request,"idea/idea_list.html",{"ideas":ideas})
 
 def idea_create(request=HttpRequest):
@@ -46,7 +46,7 @@ def idea_delete(request:HttpRequest, pk, *args, **kwargs):
 
 def tool_list(request):
     tools = Tool.objects.all()
-    return render(request,"idea/idea_list.html",{"tools":tools})
+    return render(request,"tool/tool_list.html",{"tools":tools})
 
 def tool_create(request):
     if request.method == "POST":
@@ -60,7 +60,13 @@ def tool_create(request):
 
 def tool_detail(request,pk):
     tool = Tool.objects.all().get(pk=pk)
-    return render(request,"tool/tool.html",{"tool":tool})
+    idea = tool.idea
+    all_ideas = idea.tool_idea.all()
+    context = {
+        "tool" : tool,
+        "tool_idea" : all_ideas,
+    }
+    return render(request,"tool/tool.html",context=context)
 
 def tool_update(request,pk):
     tool = Tool.objects.all().get(pk=pk)

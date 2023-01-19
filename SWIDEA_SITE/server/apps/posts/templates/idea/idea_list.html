@@ -9,12 +9,16 @@
     </select>
 </form>
 {% for idea in ideas %}
+<article>
+    {% if post.image %}
 <p>
-<img src="{{idea.image.url}}"/>
+    <img src="{{idea.image.url}}"/>
 </p>
+{%endif%}
 <small><a href="idea/{{idea.pk}}">{{idea.name}}</a></small>
 <small>예상 개발 툴 : {{idea.devtool}}</small>
 <small>{{idea.interest}}</small>
+</article>
+<hr/>
 {% endfor %}
-</div>
 {% endblock content %}
