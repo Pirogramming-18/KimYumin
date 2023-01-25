@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+    <h1>{post.title}</h1>
+    <div>
+        {post.content}
+    </div>
+    <div>
+        <button onclick="clickLike"><img src=""></button>
+    </div>
+</article>
+
+<container>
+    <div>
+        {post.comment}
+    </div>
+</container>
+
+
+    
+</body>
+
+<script>
+    function onComplete(){
+        if(httpRequest.readyState === XMLHttpRequest.DONE){
+            
+        }
+        else{
+
+        }
+    }
+
+    if(httpRequest.status >= 400){
+
+    } else{ 
+        const data = httpRequest.response;
+    }
+
+    const httpRequest = new XMLHttpRequest();
+    httpRequest.oepn("GET","http:0.0.0.0:8000",true);
+    httpRequest.send(null);
+    httpRequest.onreadystatechange = onComplete;
+
+    
+</script>
+</html>
