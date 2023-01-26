@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+    {% load static %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="{% static 'mycss.css' %}">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <title>Document</title>
 </head>
 <body>
     <article>
-    <h1>{post.title}</h1>
-    <div>
-        {post.content}
+        <div class=".title">
+    <h1>{{post.title}}</h1>
+</div>
+    <div class=".content">
+        <h2>{{post.content}}</h2>
     </div>
-    <div>
-        <button onclick="clickLike"><img src=""></button>
+    <div class=".post-id-1 post_like-{{post.like}}">
+        <div class="btn btn-primary heartBtn" onclick="onClickLike({{post.like}})"><i class=" xi-heart-o xi-2x"></i></div>
     </div>
 </article>
 
 <container>
-    <div>
-        {post.comment}
+    <div class=".comment">     
     </div>
 </container>
 
@@ -28,25 +32,35 @@
 </body>
 
 <script>
-    function onComplete(){
-        if(httpRequest.readyState === XMLHttpRequest.DONE){
-            
-        }
-        else{
 
+    const requestLike = new XMLHttpRequest();
+    const onClickLike = (like) => {
+        const url = "like_ajax/";
+        requestLike.open("POST",url,true);
+        requestLike.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        requestLike.send(JSON.stringify({"like":like}));
+    };
+    requestLike.onreadystatechange = () => {
+        if(requestLike.readyState === XMLHttpRequest.DONE){
+            if(requestLike.status < 400){
+                const like = JSON.parse(requestLike.response);
+                const pushHeartBtn = document.querySelector(".heartBtn");
+                pushHeartBtn.innerHTML = '<i class="xi-heart xi-2x"></i>'
+                if(like === 1){
+              
+                   pushHeartBtn.style.color = 'red';
+               }
+               else if(like === 0) { 
+                pushHeartBtn.innerHTML = '<i class="xi-heart-o xi-2x"></i>'
+                pushHeartBtn.style.color = 'red';
+                
+               }
+           
+           
+            }
         }
     }
-
-    if(httpRequest.status >= 400){
-
-    } else{ 
-        const data = httpRequest.response;
-    }
-
-    const httpRequest = new XMLHttpRequest();
-    httpRequest.oepn("GET","http:0.0.0.0:8000",true);
-    httpRequest.send(null);
-    httpRequest.onreadystatechange = onComplete;
+    
 
     
 </script>
